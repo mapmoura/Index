@@ -15,7 +15,7 @@
             <header>
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">HOME</a>
+                    <a class="navbar-brand" href="index.html"><img src="https://cdn.pixabay.com/photo/2020/03/11/02/29/pubg-4920753_1280.jpg"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -40,11 +40,11 @@
                     </ul>
                     </li>
                     <!li class="nav-item">
-                    <!a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <!a class="nav-link disabled" aria-disabled="true"><!/a>
                     </li>
                     </ul>
                     <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <input class="form-control me-2" type="search" placeholder="O que deseja buscar" aria-label="Search"/>
                     <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                     </div>
@@ -59,11 +59,31 @@
         <section id="section-banners" class="container-fluid">
         <p><h1 align="center"><em><u><b><i>PRODUTOS EM DESTAQUE</i></b></u></em></h1><p>
 	    <figure class="banner-home">
-    	    <img src="https://cdn.pixabay.com/photo/2024/01/27/16/57/ai-generated-8536370_1280.jpg" alt="A imagem mostra placa-mãe" width="10%" height="5%" align="center">
-        	<img src="https://cdn.pixabay.com/photo/2017/12/23/23/34/microprocessor-3036187_1280.png" alt="A imagem mostra processador" width="10%" height="5%" align="center">
-    	    <img src="https://cdn.pixabay.com/photo/2015/03/21/19/27/pc-684125_1280.jpg" alt="A imagem mostra gabinete" width="10%" height="5%" align="center">
-            <img src="https://cdn.pixabay.com/photo/2013/04/01/08/38/ram-98420_1280.png" alt="A imagem mostra memória" width="10%" height="5%" align="center">
-            <figcaption>Banner da home</figcaption>
+    	    <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2024/01/27/16/57/ai-generated-8536370_1280.jpg" class="d-block w-5" alt="PLACAS-MÃE">
+                </div>
+                <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2017/12/23/23/34/microprocessor-3036187_1280.png" class="d-block w-5" alt="PROCESSADORES">
+                </div>
+                <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2015/03/21/19/27/pc-684125_1280.jpg" class="d-block w-5" alt="GABINETES">
+                </div>
+                <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2013/04/01/08/38/ram-98420_1280.png" class="d-block w-5" alt="MEMORIAS">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <figcaption>DESTAQUES</figcaption>
         </figure>
         </section>
     	<hr style="width:100%;height:10px;background-color:black">
@@ -71,30 +91,64 @@
         <section>
         <section id="section-vendidos" class="container-fluid">
         <p align="center"><b>NOSSOS PRINCIPAIS PRODUTOS DISPONÍVEIS</b></p>
-        <table style="border: 2px solid black; padding: 3px">
-            <thead>
-                <tr style="background-color: #c4b0b0; border:1px">
-                    <th style="border: 1px solid grey; padding: 5px" align="center">PLACAS MÃE</th> 
-                    <th style="border: 1px solid grey; padding: 5px" align="center">PROCESSADORES</th>
-                    <th style="border: 1px solid grey; padding: 5px" align="center">GABINETES</th>
-                    <th style="border: 1px solid grey; padding: 5px" align="center">MEMÓRIAS</th>
-                </tr>
-            </thead>
-            <tbody> 
-                <tr>
-                    <td align="center"><a href="#">ASUS</a></td>
-                    <td align="center"><a href="#">INTEL</a></td>
-                    <td align="center"><a href="#">TORRE</a></td>
-                    <td align="center"><a href="#">DDR4</a></td>
-                </tr>
-                <tr>
-                    <td align="center"><a href="#">MSI</a></td>
-                    <td align="center"><a href="#">AMD</a></td>
-                    <td align="center"><a href="#">MICRO</a></td>
-                    <td align="center"><a href="#">DDR5</a></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="card-group">
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2018/05/16/20/18/motherboard-3406930_1280.jpg" class="card-img-top" alt="PLACA MÃE">
+            <div class="card-body">
+            <h5 class="card-title">PLACA MÃE INTEL</h5>
+            <p class="preco">R$ 999,99</p>
+            <a class="btn btn-primary" href="#" role="button">COMPRAR</a>
+            </div>
+            </div>
+            <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2019/08/08/16/56/cpu-4393383_1280.jpg" class="card-img-top" alt="PROCESSADOR">
+            <div class="card-body">
+            <h5 class="card-title">INTEL I9 14ª</h5>
+            <p class="preco">R$ 2.999,99</p>
+            <a class="btn btn-primary" href="#" role="button">COMPRAR</a>
+            </div>
+            </div>
+            <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2015/03/21/19/27/pc-684125_1280.jpg" class="card-img-top" alt="GABINETE">
+            <div class="card-body">
+            <h5 class="card-title">GABINETE FECHADO</h5>
+            <p class="preco">R$ 399,99</p>
+            <a class="btn btn-primary" href="#" role="button">COMPRAR</a>
+            </div>
+            </div>
+            <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2015/03/21/06/42/ram-683250_1280.png" class="card-img-top" alt="MEMÓRIA">
+            <div class="card-body">
+            <h5 class="card-title">DDR5 8GB 4800MHz</h5>
+            <p class="preco">R$ 899,99</p>
+            <a class="btn btn-primary" href="#" role="button">COMPRAR</a>
+            </div>
+        </div>
+        </div>
+        <!table style="border: 2px solid black; padding: 3px">
+            <!thead>
+                <!tr style="background-color: #c4b0b0; border:1px">
+                    <!th style="border: 1px solid grey; padding: 5px" align="center">PLACAS MÃE</th> 
+                    <!th style="border: 1px solid grey; padding: 5px" align="center">PROCESSADORES</th>
+                    <!th style="border: 1px solid grey; padding: 5px" align="center">GABINETES</th>
+                    <!th style="border: 1px solid grey; padding: 5px" align="center">MEMÓRIAS</th>
+                <!/tr>
+            <!/thead>
+            <!tbody> 
+                <!tr>
+                    <!td align="center"><a href="#">ASUS</a></td>
+                    <!td align="center"><a href="#">INTEL</a></td>
+                    <!td align="center"><a href="#">TORRE</a></td>
+                    <!td align="center"><a href="#">DDR4</a></td>
+                <!/tr>
+                <!tr>
+                    <!td align="center"><a href="#">MSI</a></td>
+                    <!td align="center"><a href="#">AMD</a></td>
+                    <!td align="center"><a href="#">MICRO</a></td>
+                    <!td align="center"><a href="#">DDR5</a></td>
+                <!/tr>
+            <!/tbody>
+        <!/table>
         </section>
         <br>
         <form action="#" method="post">
