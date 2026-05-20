@@ -5,7 +5,7 @@ header img{
 body{
 	width: 100%;
 	height: 100%;
-	background-color: rgb(173, 91, 91);
+	background-color: rgb(255, 255, 255);
 }
 @media (max-width: 600px){
 body{
@@ -22,6 +22,24 @@ footer{
     height: 100%;
     justify-content: space-between;
     display: flex;
+}
+#section-login{
+    margin-top: 100px;
+}
+#section-login h1{
+    text-align: center;
+}
+#section-login input{
+    width: 100%;
+}
+#section-cadastro{
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+#form-cadastrar{
+    padding: 50px;
+    display: none;
 }
 #carouselExample img{
     width: 10%;
@@ -47,4 +65,9 @@ footer{
     color: red;
     font-size: 18px;
     font-weight: bold;
+}
+#voltar-topo{
+    position: fixed;
+    bottom: 5px;
+    right: 50px;
 }
