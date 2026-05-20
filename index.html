@@ -2,39 +2,62 @@
 	<html lang="pt-br">
 		<head>
 			<meta charset="utf-8"/>
-			<title>Gamer World</title>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Gamer World</title>
 			<meta name="description" content="Gamer World e-commerce" />
 			<meta name="keywords" content="HTML, CSS, Javascript, Gamer World, E-Commerce Gammer" />
 			<meta name="author" content="Marco Antonio" />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="icon" href="https://cdn.pixabay.com/photo/2020/03/11/02/29/pubg-4920753_1280.jpg" type="image/png" sizes="16x16" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 		    <link rel="stylesheet" type="text/css" href="css/style.css">
             <header>
-                <div style="float:right">
-		        <a href="login.html">LOGIN</a>
-	            </div>
-            </header>
-            <nav id="menu">
-        		<a href="index.html">HOME</a>
-		        <a href="#">MONTE O SEU</a>
-		        <a href="#">PROMOÇÕES</a>
-		       	<a href="#">SUPORTE</a>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">HOME</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="login.html">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">SUPORTE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    HARDWARE
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">MONTE O SEU</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">PROMOÇÕES</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">MONTADOS</a></li>
+                    </ul>
+                    </li>
+                    <!li class="nav-item">
+                    <!a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    </div>
+            </div>
             </nav>
-            <form>
-                <div style="float:right">
-                <label for="search-example">Pesquisa</label>
-                <input type="search" id="search-example">
-                <input type="button" value="SEARCH">
-                </div>
-            </form>
-            <header>
                 <h1 align="center" class="title">Bem-vindo ao <b>Gamer World</b></h1>
 			    <h2 align="center">O melhor <i>e-commerce</i> para gamers Brasil</h2>
 			</header>
         </head>
     <body>
 	    <hr style="width:100%;height:10px;background-color:black">
-	    <p><h1 align="center"><em><u><b><i>PRODUTOS EM DESTAQUE</i></b></u></em></h1><p>
+        <section id="section-banners" class="container-fluid">
+        <p><h1 align="center"><em><u><b><i>PRODUTOS EM DESTAQUE</i></b></u></em></h1><p>
 	    <figure class="banner-home">
     	    <img src="https://cdn.pixabay.com/photo/2024/01/27/16/57/ai-generated-8536370_1280.jpg" alt="A imagem mostra placa-mãe" width="10%" height="5%" align="center">
         	<img src="https://cdn.pixabay.com/photo/2017/12/23/23/34/microprocessor-3036187_1280.png" alt="A imagem mostra processador" width="10%" height="5%" align="center">
@@ -42,9 +65,11 @@
             <img src="https://cdn.pixabay.com/photo/2013/04/01/08/38/ram-98420_1280.png" alt="A imagem mostra memória" width="10%" height="5%" align="center">
             <figcaption>Banner da home</figcaption>
         </figure>
+        </section>
     	<hr style="width:100%;height:10px;background-color:black">
         <!div style="height:100px; overflow:auto">
         <section>
+        <section id="section-vendidos" class="container-fluid">
         <p align="center"><b>NOSSOS PRINCIPAIS PRODUTOS DISPONÍVEIS</b></p>
         <table style="border: 2px solid black; padding: 3px">
             <thead>
@@ -70,6 +95,7 @@
                 </tr>
             </tbody>
         </table>
+        </section>
         <br>
         <form action="#" method="post">
             <br>
@@ -99,12 +125,17 @@
         </div>
         </section>
 <footer>
-	<div style="float:left">
+	    <div style="float:left">
 		<p>autor: Marco Antônio</p>
 	</div>
 	<div style="float:right">
 		<p>maio de 2026</p>
 	</div>
 </footer>
+<button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="topo()">Voltar ao topo</button>
+<script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
     </body>
 </html>
