@@ -2,14 +2,14 @@ function topo(){
     window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'shooth'
+        behavior: 'smooth'
     })
 }
-function Login(){
+function login(){
     var logado = 0;
-    var usuario = document.getElementsByName('usuario')[0].ariaValueMax;
+    var usuario = document.getElementsByName('usuario')[0].value;
     usuario = usuario.toLowerCase();
-    var senha = document.getElementById('senha').ariaValueMax;
+    var senha = document.getElementById('senha').value;
     senha = senha.toLowerCase();
 
     if(usuario == "admin" && senha == "123456"){
